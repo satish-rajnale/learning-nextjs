@@ -1,0 +1,22 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1024px;
+  
+  }
+  
+ .main h1{
+    text-align: center;
+    font-size: large;
+    font-weight: 500;
+    max-width: fit-content;
+  }
+  
+  .main p{
+    width:800px;
+    font-size: medium;
+    font-weight: 400;
+    text-align:justify;
+  }

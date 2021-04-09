@@ -1,6 +1,6 @@
 .title a,
 .title span {
-  color: #0070f3;
+  color: #6d09df;
   text-decoration: none;
 }
 
@@ -13,7 +13,7 @@
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .title,
@@ -23,5 +23,5 @@
 
 .description {
   line-height: 1.5;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }

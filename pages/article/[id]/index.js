@@ -2,7 +2,7 @@ import { server } from '../../../config'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import Meta from '../../../components/Meta'
-
+import apiIdStyles from '../../../styles/apiId.module.css';
 const article = ({ article }) => {
   // const router = useRouter()
   // const { id } = router.query
@@ -10,9 +10,14 @@ const article = ({ article }) => {
   return (
     <>
       <Meta title={article.title} description={article.excerpt} />
-      <h1>{article.title}</h1>
-      <p>{article.body}</p>
+      <div className={apiIdStyles.main}>
+        <h1 >{article.title}</h1>
+        <div style={{ borderTop:"2px solid white", marginLeft: 20, marginRight: 20 , height: 20, width:500}}></div>
+        <p>{article.body}</p>
+      </div>
       <br />
+      
+
       <Link href='/'>Go Back</Link>
     </>
   )
