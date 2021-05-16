@@ -1,22 +1,21 @@
 import Link from "next/link";
 import navStyles from "../styles/Nav.module.css";
-
-
-
+import { useRouter } from "next/router";
 function Nav() {
-    return (
+
+    const router = useRouter();
+  return (
     <nav className={navStyles.nav}>
-        <ul>
-            <li>
-                <Link href="/">Home</Link>
-               
-            </li>
-            <li>
-            <Link href="/about">About</Link>
-            </li>
-        </ul>
+      <ul>
+        <li className={router.pathname == "/" ? "active": ""}>
+          <Link href="/">Home</Link>
+        </li>
+        <li className={router.pathname == "/about" ? "active": ""}>
+          <Link href="/about">About</Link>
+        </li>
+      </ul>
     </nav>
-    )
+  );
 }
 
-export default Nav
+export default Nav;

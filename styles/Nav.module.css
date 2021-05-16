@@ -9,9 +9,14 @@
     justify-content: flex-start;
     position:fixed;
     z-index: 23;
+
 }
 
 
+ .active >
+a{
+    color:red;
+}
 
 .nav ul{
     display:flex;
@@ -20,5 +25,6 @@
     list-style: none;
 }
 .nav ul li a{
+    color:red;
     margin: 5px 15px;
 }

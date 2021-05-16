@@ -25,7 +25,7 @@
     text-decoration: none;
     border: 1px solid #302f2f;
     border-radius: 10px;
-    transition: color 0.15s ease;
+    transition: 200ms ease-in-out;
   }
   
   .card:hover,
