@@ -13,10 +13,6 @@
 }
 
 
- .active >
-a{
-    color:red;
-}
 
 .nav ul{
     display:flex;
@@ -25,6 +21,16 @@ a{
     list-style: none;
 }
 .nav ul li a{
-    color:red;
+    
     margin: 5px 15px;
+}
+
+nav ul li .active a{
+    color: red;
+    text-decoration: none;
+
+}
+nav ul li .notActive a{
+    color: white;
+    text-decoration: none;
 }
